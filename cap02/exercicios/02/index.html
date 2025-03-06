@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2</title>
+</head>
+<body>
+<h1>Lan House JS</h1>
+<form>
+  <label for="inValor">Valor por 15 minutos de uso R$: </label>
+  <input type="number" id="inValor" required min="0" step="0.01">
+  <br><br>
+
+  <label for="inTempo">Tempo de uso do cliente</label>
+  <input type="number" id="inTempo" min="0"  required>
+  <br><br>
+
+  <input type="submit" value="Calcular valor a ser pago">
+
+</form>
+<h3 id="outValor"></h3>
+
+<script src="index.js"></script>
+</body>
+</html>
