@@ -16,7 +16,7 @@ if (num === soma){
     console.log(`Divisores do ${num}: ${saida}(Soma: ${soma})`);
     console.log(`${num} É um Número Perfeito`);
 }else{
-    console.log(`Não é um Número Perfeito`);
+    console.log(`${num} Não é um Número Perfeito`);
 }
 
 
