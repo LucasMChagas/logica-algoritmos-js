@@ -23,5 +23,10 @@ if (maior => 7){
         console.log(`- ${destaque.nome}`);
     }
 }else{
-    console.log("Não há alunos em destaque na turma")
+    console.log("Não há alunos em destaque na turma");
 }
+
+
+
+
+
