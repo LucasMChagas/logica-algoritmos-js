@@ -21,20 +21,16 @@ frm.addEventListener("submit", (e) => {
 frm.btListar.addEventListener("click", () => {
     respLista.innerText = "";
     candidatos.forEach(candidato => {
-
         respLista.innerText += `${candidato.nome} - ${candidato.acertos} acertos\n `;
     })
-
 });
 
 frm.btAprovados.addEventListener("click", () => {
     const numero = Number(prompt("Número de acertos para aprovação?"));
     candidatos.sort((a, b) => b.acertos - a.acertos);
-
     const candidatosAprovados = candidatos.filter(candidato => candidato.acertos >= numero);
     respLista.innerText = "";
     candidatosAprovados.forEach(candidato => {
-
         respLista.innerText += `${candidato.nome} - ${candidato.acertos} acertos\n `;
     })
 });

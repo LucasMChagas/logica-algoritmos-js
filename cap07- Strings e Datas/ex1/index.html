@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    const anuncio = prompt("Anúcio: ");
+    let numPalvras = 0;
+    const tam = anuncio.length;
+    for (let i = 0; i < tam; i++) {
+      if (anuncio.charAt(i) === " ") {
+        numPalvras++;
+      }
+    }
+    alert(`Anúncio: ${anuncio}\nN° Palvras: ${(numPalvras + 1)}`);
+  </script>
+</body>
+</html>
