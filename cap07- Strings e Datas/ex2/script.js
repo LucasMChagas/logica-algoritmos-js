@@ -3,7 +3,7 @@ const resp = document.querySelector('span');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const fruta = form.inFruta.value;
+    const fruta = form.inFruta.value.toUpperCase();
     let resposta = "";
 
     for(const letra of fruta) {

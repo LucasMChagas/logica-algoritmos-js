@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa inverte palavra</title>
+</head>
+<body>
+  <script>
+    const palavra = prompt("Palavra: ");
+    const tamanho = palavra.length;
+
+    let inverso = palavra.charAt(tamanho - 1);
+
+    for (let i = tamanho - 2; i >= 0; i--) {
+      inverso += palavra.charAt(i).toLowerCase();
+    }
+
+    alert(` Palavra: ${palavra}\n Invertida: ${inverso}`);
+  </script>
+</body>
+</html>
