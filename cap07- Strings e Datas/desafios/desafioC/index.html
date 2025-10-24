@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multa de trânsito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="" alt="Multa de trânsito" class="alta">
+    <h2>Multa de trânsito</h2>
+    <form>
+        <label for="inDataInfracao">Data da infração: </label>
+        <input type="date" id="inDataInfracao" required autofocus>
+        <label for="inValorMulta">Valor da multa R$: </label>
+        <input type="number" id="inValorMulta" step="0.01" min="0" required autofocus>
+        <input type="submit" value="Calcular data limite e valor do desconto">
+    </form>
+    <h3 id="resp1"></h3>
+    <h3 id="resp2"></h3>
+    <script src="index.js"></script>
+</body>
+</html>
