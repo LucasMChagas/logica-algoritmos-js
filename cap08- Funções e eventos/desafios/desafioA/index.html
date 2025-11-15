@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clube de natação</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <img src="" alt="imagem">
+  <form>
+    <div class="container">
+      <div>
+        <label for="inNome">Nome do Atleta: </label>
+        <input class="campoFormulario" type="text" name="nome" id="inNome" placeholder="Digite o nome" required>
+      </div>
+      <div>
+        <label for="inIdade">Idade: </label>
+        <input class="campoFormulario" type="number" name="idade" id="inIdade" placeholder="Digite a idade" min="0" step="1" required>
+      </div>
+      <input class="button" type="submit" value="Categorizar Atleta">
+    </div>
+  </form>
+
+  <span id="resp1"></span><br>
+  <span id="resp2"></span><br>
+  <span id="resp3"></span>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
