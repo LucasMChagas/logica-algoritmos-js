@@ -1,6 +1,7 @@
 const inRadios = document.querySelectorAll('input');
 const imgClube = document.querySelector('#imgClube');
 const dvTitulo = document.querySelector('#divTitulo');
+const visita = document.querySelector("pre");
 
 const trocarClube = ()=> {
     const clubes = ["Brasil", "Pelotas", "Farroupilha"];
@@ -44,7 +45,21 @@ const verificarClube = ()=> {
     }
 }
 
+const verificarVisita = () =>{
+    if (localStorage.getItem("contadorVisita")) {
+        let contador = Number(localStorage.getItem("contadorVisita"));
+        contador++;
+        localStorage.setItem("contadorVisita", contador.toString());
+        visita.innerText = `Que bom que você voltou! Esta é a sua visita de numero ${contador}`;
+    }else{
+        localStorage.setItem("contadorVisita", String(1));
+        visita.innerText = `Muito Bem vindo essa é sua primeira visita ao nosso site`;
+    }
+
+}
+
 window.addEventListener("load", verificarClube);
+window.addEventListener("load", verificarVisita);
 
 for(const inRadio of inRadios) {
     inRadio.addEventListener("change", trocarClube)
