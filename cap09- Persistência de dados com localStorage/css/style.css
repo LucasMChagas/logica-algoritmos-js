@@ -4,6 +4,7 @@ pre{
 .cores-Brasil{
     color: black;
     background-color: red;
+
 }
 .cores-Pelotas{
     color: blue;
@@ -12,4 +13,7 @@ pre{
 .cores-Farroupilha{
     color: green;
     background-color: white;
+}
+.oculto{
+    display: none;
 }
