@@ -6,6 +6,7 @@ const titulo = document.querySelector("#titulo");
 const separador = document.querySelector("#separador");
 
 
+
 btnAdicionar.addEventListener("click", (e) => {
     if(localStorage.getItem("listaProdutos")){
         let listaProdutos = localStorage.getItem("listaProdutos");

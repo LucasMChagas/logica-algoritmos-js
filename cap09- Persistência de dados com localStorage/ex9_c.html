@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herbi: Controle de serviços</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+</head>
+<body style="margin: 20px">
+<div id="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="img/exerc.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-sm-9">
+            <h3>Herbie: Controle de serviços</h3>
+            <label class="form-label" for="inServico">Serviço Veiculo</label>
+            <input class="form-control" type="text" name="inServico" id="inServico" required><br>
+
+            <input class="btn btn-primary" type="button" id="btAdicionarServico" value="Adicionar Serviço">
+            <input class="btn btn-success" type="button" id="btExecutarServico" value="Executar Serviço">
+
+            <br>
+            <figure class="text-end">
+                <div id="respInServiçosPendentes">Serviços pendentes: 0</div>
+            </figure>
+            <div style="background-color: black"><p style="color: white">Serviçoes em execução</p></div>
+            <p id="resp"></p>
+        </div>
+    </div>
+</div>
+
+    <script src="js/ex9_c.js"></script>
+</body>
+</html>
