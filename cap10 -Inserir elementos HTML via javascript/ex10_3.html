@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus filmes favoritos</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/ex10_3.jpg" alt="Filmes" class="img-fluid">
+            </div>
+            <div class="col-sm-8">
+                <h1>Meus Filmes favoritos</h1>
+                <form>
+                    <p>
+                        <label for="inTitulo">Titulo do Filme: </label>
+                        <input type="text" id="inTitulo" class="form-control" required autofocus>
+                    </p>
+                    <p>
+                        <label for="inGenero">Gênero: </label>
+                        <input type="text" id="inGenero" class="form-control" required>
+                    </p>
+                    <input type="submit" value="Adicionar" class="btn btn-primary float-right mb-3">
+                </form>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Título</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/ex10_3.js"></script>
+</body>
+</html>
